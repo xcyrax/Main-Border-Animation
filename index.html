@@ -4,18 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Belajar Bekerja dengan git dan github di termux</title>
+  <title>Animation-border</title>
   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 </head>
 <body>
   
-  <div class="rainbow">
-    Rainbow border
-    </div>
+  <div class="rainbow"></div>
   
   
   <!-- @@@@@@@@@@ Javascript-Here @@@@@@ -->
   <script>
+    const h1 = document.createElement('h1');
+    const textH1 = document.createTextNode('Hello');
+    h1.appendChild(textH1)
+    const rainbow = document.getElementsByClassName('rainbow')[0];
+    rainbow.appendChild(h1);
+    h1.style.color = 'orange';
+    h1.style.fontSize =  3.5 + 'rem';
+    h1.style.zIndex = '999999';
+    h1.style.position = 'absolute';
     
   </script>
 </body>
